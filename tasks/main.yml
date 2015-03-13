@@ -1,3 +1,6 @@
 ---
+- name: Set system mailname
+  template: src=mailname.j2 dest=/etc/mailname mode=0644
+
 - name: Install and configure postfix
   apt: name=postfix update_cache=yes

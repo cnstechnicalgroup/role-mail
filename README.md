@@ -1,7 +1,7 @@
-Role: cns.postfix
+Role: cns.mail
 ========
 
-This role installs and configures postfix.
+This role sets system mailname and installs / configures postfix on Debian.
 
 Requirements
 ------------
@@ -15,7 +15,7 @@ In the current version, you can specify the following variables:
 
 | Name               | Default |                                      |
 |--------------------|---------|--------------------------------------|
-| ---                |   ---   | ---                                  |
+| mailname           |   ---   | The visible mail name of the system. |
 
 
 Dependencies
@@ -41,5 +41,5 @@ Examples
 - name: cns.postfix example
   hosts: all
   roles:
-    - cns.postfix
+    - cns.mail
 ```
